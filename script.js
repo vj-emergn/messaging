@@ -8,4 +8,5 @@ const input = document.querySelector('input').addEventListener('input', e => {
 const btn = document.querySelector('button').addEventListener('click', e => {
   console.log('click');
   window.opener.postMessage('foo', '*');
+  window.close();
 });
